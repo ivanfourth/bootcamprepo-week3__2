@@ -1,0 +1,55 @@
+h1 {
+  color: #000;
+  font-size: 50px;
+  background: red;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-indent: 50px;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  -webkit-transition: -webkit-transform 1s;
+          transition: transform 1s;
+}
+h1:after {
+  content: "";
+  background: black;
+  width: 500px;
+  height: 40px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+}
+h1:before {
+  content: "";
+  background: purple;
+  width: 500px;
+  height: 40px;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+}
+
+.box1 {
+  background: red;
+  width: 50px;
+  height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
