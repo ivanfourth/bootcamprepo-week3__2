@@ -12,7 +12,7 @@ function Person(firstName, lastName) {
 
 Person.prototype.flirt = function() {
 
-    this.interval = setInterval(function() {
+    this.interval = setInterval(() => { // uzycie arrow function
 
         console.log("Cześć, nazywam się " + this.firstName + " " + this.lastName + "! Masz ochotę na drinka?");
 
@@ -20,10 +20,10 @@ Person.prototype.flirt = function() {
             clearInterval(this.interval);
         }
 
-    }.bind(this), 1000);
+    },1000);
 
 };
 
-var person = new Person("Jan", "Kowalski");
+var person = new Person("Baltazar", "Gąbka");
 
 person.flirt();
